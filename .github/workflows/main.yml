@@ -1,12 +1,13 @@
-name: Tests durchführen
+name: CI Pipeline
 
 defaults:
     run:
         working-directory: ./backend-server
 
-on: push
-    branches:
-    - staging
+on: 
+    push
+        branches:
+            - staging
 
 steps:
 - uses: actions/checkout@v4
